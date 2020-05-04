@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Eventee | Sample</title>
+    <link rel="stylesheet" href="/styles/generalSettings.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <h1>Eventee</h1>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Event Plan</a></li>
+            <li><a href="#">Contact</a></li>
+            <li id="hireUs"><a href="#">Hire us</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="content-pay">
+        
+        <div class="content-pay__box">
+          
+            <div class="box">
+                
+                <table>
+                <tr>
+                    <td>
+                        <strong>Payment Method</strong>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Credit Card</strong>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        <input type="text" class="card-no" placeholder="Card Number">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <div class="card-back">
+                            <table>
+                            <tr>
+                            <td><input type="text" class="card-year" placeholder="Year"></td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td>
+                                <input type="text" class="card-cvv" placeholder="CVV">
+                            </td>
+                        </tr>
+                    </table>
+                            <!-- <input type="text" class="card-year" placeholder="Year">
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="text" class="card-cvv" placeholder="CVV"> -->
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="btn-row">
+                        <a class="sec-btn">
+                            Make Payment
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            
+
+            </div>
+        </div>
+
+        
+
+      </div>
+ 
+      
+      <footer>
+          <p>Eventee &copy | <time></time></p>
+      </footer>
+    </div>
+
+    <script>
+        const currentDate = new Date()
+    document.querySelector('time').textContent += currentDate.getFullYear()
+
+    console.log(document.querySelector('time').innertText = currentDate.getFullYear())
+    </script>
+  </body>
+</html>

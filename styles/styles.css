@@ -1,0 +1,163 @@
+/**********
+ *@sample{header styling}
+ **********/
+
+.container {
+  width: 100%;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+header {
+  background: #9a0d37;
+  padding: 0.5rem 4rem;
+  box-sizing:border-box;
+}
+
+nav h1{
+margin-top:-70px;
+padding-top:0;
+font-family:cursive;
+color:#fff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+ 
+}
+
+nav ul li a {
+  padding: 0 4rem;
+  color: #fff;
+  font-size:0.8rem;
+}
+
+nav ul li:not(#hireUs) {
+  margin-top: 2rem;
+  margin-bottom:2rem;
+}
+
+#hireUs a{
+    border-bottom:solid 0.8px #fff;
+    padding:0;
+    padding-bottom:0.3rem;
+}
+
+
+/**********
+ *@sample{footer styling}
+ **********/
+ footer{
+     background:#9a0d37;
+     width:100%;
+     /* margin-top:18rem; */
+     padding:3rem 2rem 1rem 2rem;
+     position: absolute;
+     bottom: 0;
+ }
+
+
+ footer p{
+    text-align:center;
+    color:#fff;
+
+ }
+
+ .content {
+   height: 69vh;
+   background-image: url(../img/concert.jpg);
+   background-size: cover;
+    position: relative;
+
+   
+ }
+
+ .content__text-box {
+   position: absolute;
+   top:50%;
+   left:50%;
+   transform: translate(-50%, -50%);
+   /* text-align: center; */
+   overflow: hidden;
+   white-space: nowrap;
+}
+.heading-primary {
+  color: #fff;
+  font-family: cursive;
+}
+.heading-primary--main {
+  text-transform: capitalize;
+  font-size: 6rem;
+}
+
+.heading__button, 
+heading__button:link, 
+heading__button:visited {
+  text-transform: capitalize;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 10rem;
+  padding: .6rem 2rem;
+  background-color: rgba(255, 255, 255, 0.602);
+  cursor: pointer;
+}
+
+.content-pay {
+  /* position: relative; */
+}
+
+.content-pay__box {
+  position: absolute;
+  width: 50%;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+   
+}
+
+.box {
+  
+}
+
+table {
+  /* border-spacing: 10px; */
+}
+
+.card-no {
+  margin-top: 0.5rem;
+  width: 100%;
+}
+.card-back {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+input {
+  height: 2rem;
+}
+.sec-btn, 
+sec-btn:link, 
+sec-btn:visited {
+  text-transform: capitalize;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  padding: .4rem 1.5rem;
+  background-color: #9a0d37;
+  cursor: pointer;
+  color: #fff;
+  
+}
+.btn-row{
+  align-items: center;
+  padding: 10px auto;
+}
