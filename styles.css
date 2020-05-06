@@ -1,0 +1,69 @@
+/**********
+ *@sample{header styling}
+ **********/
+
+.container {
+  width: 100%;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+header {
+  background: #9a0d37;
+  padding: 0.5rem 4rem;
+  box-sizing:border-box;
+}
+
+nav h1{
+margin-top:-70px;
+padding-top:0;
+font-family:cursive;
+color:#fff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+ 
+}
+
+nav ul li a {
+  padding: 0 4rem;
+  color: #fff;
+  font-size:0.8rem;
+}
+
+nav ul li:not(#hireUs) {
+  margin-top: 2rem;
+  margin-bottom:2rem;
+}
+
+#hireUs a{
+    border-bottom:solid 0.8px #fff;
+    padding:0;
+    padding-bottom:0.3rem;
+}
+
+
+/**********
+ *@sample{footer styling}
+ **********/
+ footer{
+     background:#9a0d37;
+     width:100%;
+     margin-top:18rem;
+     padding:10rem 2rem 0.3rem 2rem;
+ }
+
+
+ footer p{
+    text-align:center;
+    color:#fff;
+
+ }
