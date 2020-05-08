@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Eventee | Sample</title>
-    <link rel="stylesheet" href="/generalSettings.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/styles/generalSettings.css">
+    <link rel="stylesheet" href="/styles/styles.css">
   </head>
   <body>
     <div class="container">
@@ -22,22 +22,19 @@
           </ul>
         </nav>
       </header>
-
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-        assumenda consectetur, quasi et molestias laboriosam accusantium ad
-        velit quo voluptatum repellat culpa magnam cum odio placeat enim unde
-        quod? Id.
-      </p>
+ 
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus assumenda consectetur, quasi et molestias laboriosam accusantium ad velit quo voluptatum repellat culpa magnam cum odio placeat enim unde quod? Id.</p>
 
       <footer>
-        <p>Eventee &copy | <time></time></p>
+          <p>Eventee &copy | <time></time></p>
       </footer>
     </div>
 
     <script>
-      const currentDate = new Date();
-      document.querySelector('time').textContent += currentDate.getFullYear();
+        const currentDate = new Date()
+    document.querySelector('time').textContent += currentDate.getFullYear()
+
+    console.log(document.querySelector('time').innertText = currentDate.getFullYear())
     </script>
   </body>
 </html>

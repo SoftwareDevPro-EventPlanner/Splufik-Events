@@ -4,9 +4,9 @@
 
 .container {
   width: 100%;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   
 }
-
 header {
   background: #9a0d37;
   padding: 0.5rem 4rem;
@@ -67,3 +67,159 @@ nav ul li:not(#hireUs) {
     color:#fff;
 
  }
+ /**********
+ *@sample{Admin login-page styling}
+ **********/
+.container2 {
+  width: 100%;
+  height: 750px;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: #b40a3d;
+  
+  
+}
+.Entry{
+  width: 1200px;
+  padding: 10% 0 0;
+  margin: auto;
+ 
+
+}
+.form{
+  width:60%;
+  z-index: 1;
+  background: #96385ffd;
+  margin: 0 auto 10px;
+  padding: 55px;
+  text-align: center;
+  
+  
+}
+.form input{
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding:10rem 2rem 0.3rem 2rem;
+  width: 90%;
+  border: 0;
+  margin: 0 0 15px;
+  background: white;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 15px;
+}
+.form button{
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  outline: 1;
+  width: 25%;
+  border: 0;
+  margin: 0 0 15px;
+  background: blue;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 15px;
+  cursor: pointer;
+}
+h2{
+  margin-top:-60px;
+  padding-top:5%;
+  padding-bottom: 5%;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #fff;
+  
+  text-align: left;
+  }
+  h3{
+    padding-left: 2em;
+    padding-top: 2rem;
+    font-family:cursive;
+    color:#fff;
+    font-size: 30px;
+   }
+/**********
+ *@sample{Wedding page and form styling}
+ **********/
+.Entry1{
+  width: 1200px;
+  height:0px;
+  padding: 10% 0 0;
+  margin: auto;
+ 
+
+}
+
+.form1{
+  width:104%;
+  z-index: 1;
+  background: #e7d6d6;
+  margin: 0 auto 100px;
+  padding: 55px;
+  text-align: center;
+  margin-bottom: 20%;
+  margin-left: -5rem;
+  
+}
+
+.form1 input{
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding:10rem 2rem 0.3rem 2rem;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  background: white;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 15px;
+  
+}
+
+.form1 button{
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  outline: 1;
+  width: 6rem;
+  border: 1;
+  margin: 0 0 15px;
+  background: brown;
+ 
+  font-size: 14px;
+  padding: 15px;
+  cursor: pointer;
+  
+}    
+ h4 {
+      margin-top:-60px;
+      padding-top:15%;
+      font-size: 50px;
+      font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      text-align: left;
+      
+    }
+    
+    #wed_page .section p {
+      padding-bottom: 20px;
+      line-height: 1.7em;
+    }
+    #wed_page {
+      background: url("../img/wed.jpg") no-repeat center center/cover;
+      width: 100%;
+      height: 100%;
+      padding-top: 100px;
+      
+    } 
+    .container3 {
+      margin: auto;
+      max-width: 50%;
+      overflow: 0;
+      padding: 0 20px;
+    }
+    h5{
+      padding: 2rem;
+      text-align: left;
+      font-size: 20px;
+
+    }
+   
+   
+  
+ 
+  
+
+ 
