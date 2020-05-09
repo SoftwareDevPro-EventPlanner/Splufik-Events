@@ -3,7 +3,7 @@
  * Product name:Eventee Web App
  * 
  * Product Desc:This software is 
- * built for allowing users to to buy and 
+ * built for allowing users to buy an
  * event plan while we plan the event for them
  * 
  * Product founders:Eventee team @{Mainor:Abiola,Chizoba,Ifeanyi & Onah}
