@@ -1,0 +1,24 @@
+{
+  "name": "eventee",
+  "version": "1.0.0",
+  "description": "Project description:",
+  "main": "adminInsertionPanel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "parcel-bundler",
+    "i18next"
+  ],
+  "author": [
+    "Abiola",
+    "Chizoba",
+    "Ifeanyi",
+    "Onah"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "i18next": "^19.4.4",
+    "parcel-bundler": "^1.12.4"
+  }
+}
