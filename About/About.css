@@ -1,0 +1,155 @@
+/**********
+ *@sample{header styling}
+ **********/
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+header {
+    background: #9a0d37;
+    padding: 0.5rem 4rem;
+    box-sizing: border-box;
+    min-height: 10vh;
+    padding: 3rem;
+    width: 100%;
+}
+
+nav h1 {
+    margin-top: -50px;
+    padding-top: 0;
+    font-family: cursive;
+    color: #fff;
+    font-size: 2rem;
+}
+
+h1 {
+    text-align: center;
+    color: #9a0d37;
+}
+
+h2 {
+    color: white;
+    font-size: 15rem;
+    margin-left: 20rem;
+    font-weight: normal;
+}
+
+.container p {
+    width: 100%;
+    text-align: center;
+}
+
+.container div {
+    display: inline-block;
+}
+
+h3 {
+    color: white;
+    font-size: 5rem;
+    margin-left: 30rem;
+    font-weight: normal;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+nav ul li a {
+    padding: 4rem;
+    color: #fff;
+    font-size: 1.8rem;
+    margin: 3rem;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    /* border-bottom: solid 0.8px #fff;
+    padding-bottom: 0.3rem; */
+}
+
+#OurContact:hover {
+    border-bottom: solid 0.8px #fff;
+    padding-bottom: 0.3rem;
+}
+
+#OurHome:hover {
+    border-bottom: solid 0.8px #fff;
+    padding-bottom: 0.3rem;
+}
+
+#OurEvent:hover {
+    border-bottom: solid 0.8px #fff;
+    padding-bottom: 0.3rem;
+}
+
+#aboutUs:hover {
+    border-bottom: solid 0.8px #fff;
+    padding-bottom: 0.3rem;
+}
+
+#hireUs:hover {
+    border-bottom: solid 0.8px #fff;
+    padding-bottom: 0.3rem;
+}
+
+
+/* nav ul li:not(#hireUs) {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+ */
+
+
+/* #hireUs a {
+    border-bottom: solid 0.8px #fff;
+    padding: 0;
+    padding-bottom: 0.3rem;
+} */
+
+
+/**********
+*@sample{footer styling}
+**********/
+
+footer {
+    background: #9a0d37;
+    width: 100%;
+    margin-top: 7rem;
+    padding: 8rem 2rem 0.3rem 2rem;
+}
+
+footer p {
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    padding-bottom: 10rem;
+}
+
+@media (max-width:768px) {
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 100%;
+    }
+    header {
+        width: 100%;
+    }
+}

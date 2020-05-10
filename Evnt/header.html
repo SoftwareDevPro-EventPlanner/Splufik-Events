@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Eventee | Sample</title>
+    <link rel="stylesheet" href="./styles/generalSettings.css">
+    <link rel="stylesheet" href="./styles/EventPlanstyles.css">
+    <link rel="stylesheet" href="./styles/LandingPage-styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <h1>Eventee</h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="/AboutPage.html">About</a></li>
+                    <li><a href="/EventPlan.html">Event Plan</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li id="hireUs"><a href="#">Hire us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus assumenda consectetur, quasi et molestias laboriosam accusantium ad velit quo voluptatum repellat culpa magnam cum odio placeat enim unde quod? Id.</p>
+
+        <footer>
+            <p>Eventee &copy | <time></time></p>
+        </footer>
+    </div>
+
+    <script>
+        const currentDate = new Date()
+        document.querySelector('time').textContent += currentDate.getFullYear()
+
+        console.log(document.querySelector('time').innertText = currentDate.getFullYear())
+    </script>
+</body>
+
+</html>

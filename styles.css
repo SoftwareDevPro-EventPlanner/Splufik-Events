@@ -1,0 +1,216 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   }
+   body{
+    font-family: arial, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color:rgb(241,220,226) ;
+    height: 100vh;
+    width: 100%;
+    
+   }
+
+   html{
+           font-size: 62.5%;
+   }
+   
+   .card{
+        width: 20%;
+        display: inline-block;
+        box-shadow: .2rem .2rem 2.0rem black;
+        border-radius: .5rem; 
+        margin: 2%;
+        position:a;
+      
+       }
+   
+   .image img{
+     width: 100%;
+     border:2.5rem;
+    }
+   
+   .title{
+     text-align: center;
+     padding: 4.5rem;
+     background-color: rgb(241,220,226);
+    }
+    .title h1{
+      font-size: 2rem;
+      color: rgb(92, 3, 46); 
+      margin-bottom: 2rem;
+   }
+   .title p{
+      font-size: 1.5rem;
+   }
+   
+   button{
+     margin-top: 3.0rem;
+     margin-bottom: 3.0rem;
+     background-color: rgb(241,220,226);
+     border: 1px solid rgb(70, 50, 58);
+     border-radius: 1.0rem;
+      padding: .7rem;
+     font-size: 1.5rem;
+     font-weight: 2.0rem;
+     width: 10.0rem;
+   }
+   button:hover{
+     background-color:  rgb(158, 9, 81);
+     color: white;
+     transition: .5s;
+     cursor: pointer;
+   }
+
+   .card-footer{
+       background-color: rgb(154,13,55);
+        width: 100%;
+        text-align: center;
+        padding-top: 1.0rem;
+        border-bottom-right-radius: .5rem;
+        border-bottom-left-radius: .5rem;
+   }
+   .card-header {
+     background-color:rgb(154,13,55);
+     width: 100%;
+     padding-top: 2.0rem;
+     border: .5rem;
+    
+}
+
+.card-body {
+    background-color:rgb(241,220,226);
+    width: 100%;
+    padding-top: 2.5rem;
+    border: 6.5rem;
+   
+}
+.card-body .h1{
+    display: flex;
+    font-size: 5.0rem;
+    color: #9A0D37;
+    margin-bottom: 6.0rem;
+    justify-content: center;
+}
+.card-body .p{
+    display: flex;
+    font-size: 2.3rem;
+    color: #9A0D37;
+    justify-content: center;
+    align-items: center;
+    padding: 3.5rem;
+}
+
+.upcoming-event .h1{
+    display: flex;
+    font-size: 5.0rem;
+    color: #9A0D37;
+    margin-bottom: 3.0rem;
+    justify-content: center;
+    padding: 8.0rem;
+}
+
+
+
+.date{
+  width: 20%;
+  display: inline-block;
+  margin: 2%;
+
+ }
+
+.date{
+  text-align: center;
+  padding: 4.5rem;
+  position: relative;
+
+ }
+ .date-title h1{
+   font-size: 2.6rem;
+   margin: 4rem;
+   color: #9A0D37;
+  text-align: center;
+   
+   margin-bottom: 2rem;
+}
+.date-title p{
+   font-size: 1.9rem;
+   text-align: center;
+  
+}
+
+.date-btn{
+  margin: 3.0rem;
+  margin-bottom: 1.0rem;
+  background: none;
+  background-color: rgb(121, 7, 39);
+  border:none;
+  padding: 1.9rem 2rem;
+  font-size: 2.1rem;
+  font-weight: 1.0rem;
+  width: 20.0rem;
+  color: white
+
+}
+
+.calen{
+  font-size:60px;
+  position: absolute;
+  top: 7rem;
+  color: rgb(110, 10, 42);
+  
+  
+}
+.bod{
+  color: rgb(240, 11, 22);
+
+}
+
+
+
+@media (max-width:768px){
+    
+   .card{
+     display: inline-block;
+      width: 80%;
+       margin:3.5rem;
+       overflow: auto;
+       
+     }
+     .card-body .h1{
+      font-size: 3.0rem;
+      margin: 2rem;
+     }
+   .upcoming-event{
+     width: 100%;
+
+   }  
+   .upcoming-event .h1{
+    display: inline-block;
+    font-size: 2.5rem;
+    color: #9A0D37;
+    margin-bottom: 3.0rem;
+    text-align: center;
+    padding: 4.0rem;
+   
+   
+}
+.date{
+     width: 100%;
+     font-size:1rem ;
+     display: inline-block;
+     justify-content: center;
+     align-items: center;
+}
+.bod{
+  color: rgb(11, 156, 240);
+  display: inline-block;
+  
+}
+.calen{
+  display: inline-block;
+  top:0;
+  left:13rem;
+}
+
+}
