@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Eventee | Admin Insertion Panel</title>
+    <title>Eventee|Admin Login</title>
     <link rel="icon" href="https://i.ibb.co/FwkB0jq/logo.png" />
     <link rel="stylesheet" href="/styles/generalSettings.css" />
-    <link rel="stylesheet" href="/styles/adminInsertionPanel.css" />
+    <link rel="stylesheet" href="/styles/adminLogin.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="container2">
       <header>
         <nav>
           <h1>Eventee</h1>
@@ -19,7 +19,6 @@
             <li><a href="/aboutPage.html">About</a></li>
             <li><a href="#">Event Plan</a></li>
             <li><a href="#">Contact</a></li>
-            <li id="hireUs"><a href="#">Hire us</a></li>
             <li>
               <img
                 src="https://i.ibb.co/K54p6tg/eng.png"
@@ -36,52 +35,16 @@
         </nav>
       </header>
 
-      <div id="formNdAsideWrapper">
-        <aside>
-          <a href="./adminInsertionPanel.html">Admin Insertion Login</a>
-          <a href="#">View Clients Events</a>
-        </aside>
-        <form>
-          <h3>Welcome to Admin Plan Panel</h3>
-          <progress max="100" value="30" id="uploadProgress">0%</progress>
-          <label for="eventPlan">Event plan type</label>
-          <input
-            id="eventPlan"
-            type="text"
-            name="eventPlan"
-            placeholder="Event Plan Type"
-            required
-          />
-          <label for="eventImgLink">Event image link</label>
-          <input
-            id="eventImgLink"
-            type="text"
-            name="eventImgLink"
-            placeholder="Event Image Link"
-            required
-          />
-          <label for="eventPrice">Event price</label>
-          <input
-            id="eventPrice"
-            type="text"
-            name="eventPrice"
-            placeholder="Event price"
-            required
-          />
-          <label for="eventDesc">Event description</label>
-          <textarea
-            id="eventDesc"
-            name="eventDesc"
-            placeholder="Event description"
-            required
-          ></textarea>
-          <input type="submit" value="Submit Plan" />
-        </form>
+      <div class="Entry">
+        <div class="form">
+          <form action="">
+            <h2>Admin Login</h2>
+            <input type="email" name="email" placeholder="Email" />
+            <input type="password" name="password" placeholder="Password" />
+            <input type="submit" value="Login" />
+          </form>
+        </div>
       </div>
-
-      <footer>
-        <p>Eventee &copy | <time></time></p>
-      </footer>
     </div>
 
     <!-- The i18next Localisation lib cdn below -->
@@ -110,6 +73,6 @@
       firebase.analytics();
       const db = firebase.firestore();
     </script>
-    <script src="/scripts/adminInsertionPanel.js"></script>
+    <script src="./scripts/adminLogin.js"></script>
   </body>
 </html>

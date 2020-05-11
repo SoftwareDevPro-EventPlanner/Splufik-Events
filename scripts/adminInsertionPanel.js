@@ -10,7 +10,10 @@
  * 
  * Product stack:Html,Css,Jscript,Firebase Storage Api,Imgbb,Parcel bundler mod
  * 
+ * This file: this file is responsible for getting the different types of event from 
+ * the admin to the backend
  * Production year:2020
+ * 
  *  ...... .       . .......  .    .  ......  ......   .......
  *  ....     .   .   .....    . .  .    ..    .....    .....
  *  ......     .     .......  .    .    ..    ......   .......
