@@ -6,7 +6,7 @@
  * built for allowing users to to buy and 
  * event plan while we plan the event for them
  * 
- * Product founders:Eventee team @{Mainor:Abiola,Chizoba,Ifeanyi & Onah}
+ * Product founders:Eventee team @{Mainor:Abiola,Chizoba,Peter,Ifeanyi & Onah}
  * 
  * Product stack:Html,Css,Jscript,Firebase Storage Api,Imgbb,Parcel bundler mod
  * 
