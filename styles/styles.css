@@ -37,11 +37,51 @@ nav ul li a {
   padding: 0 4rem;
   color: #fff;
   font-size:0.8rem;
+  white-space: nowrap;
 }
 
 nav ul li:not(#hireUs) {
   margin-top: 2rem;
   margin-bottom:2rem;
+}
+
+@media only screen and (max-width: 900px) {
+  header {
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+  }
+
+  nav h1 {
+    margin-top: -60px;
+    margin-left: 0px;
+  }
+
+  #hm {
+    margin-left: -100px;
+  }
+
+  nav ul li {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  #hireUs {
+    display: none;
+  }
+
+  nav ul li a {
+    padding: 0 0.5rem;
+    white-space: nowrap;
+  }
+  form {
+    width: 90%;
+  }
+
+  form h3,
+  progress {
+    width: 87%;
+    margin-left: 0.5rem;
+  }
 }
 
 #hireUs a{
@@ -59,8 +99,8 @@ nav ul li:not(#hireUs) {
      width:100%;
      /* margin-top:18rem; */
      padding:3rem 2rem 1rem 2rem;
-     position: absolute;
-     bottom: 0;
+     /* position: absolute;
+     bottom: 0; */
  }
 
 
@@ -71,12 +111,11 @@ nav ul li:not(#hireUs) {
  }
 
  .content {
-   height: 69vh;
+  height: 85vh;
    background-image: url(../img/concert.jpg);
-   background-size: cover;
-    position: relative;
-
-   
+   background-repeat:no-repeat;
+  background-size:cover;
+  background-position:top;
  }
 
  .content__text-box {
@@ -108,6 +147,41 @@ heading__button:visited {
   padding: .6rem 2rem;
   background-color: rgba(255, 255, 255, 0.602);
   cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  .heading-primary--main {
+    text-transform: capitalize;
+    font-size: 3rem;
+  }
+  .heading-primary {
+    color: #fff;
+    font-family: cursive;
+    font-size: 1.3rem;
+  }
+
+  /* .content {
+    background-image: url(../img/concert-780w.jpg);
+  } */
+}
+
+
+@media (max-width: 426px){
+  .heading-primary--main::after {
+    content: "\A";
+  }
+  .heading-primary--sub::before {
+    content: "\A";
+    white-space: pre;
+  }
+  nav {
+    font-size: 70%;
+  }
+
+  .content {
+    height: 58vh;
+  }
+  
 }
 
 .content-pay {
