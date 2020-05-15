@@ -154,6 +154,7 @@
 }
 
 .calen{
+  display: flex;
   font-size:60px;
   position: absolute;
   top: 7rem;
@@ -168,10 +169,10 @@
 
 
 
-@media (max-width:768px){
+@media (max-width:1028px){
   .container{
      display: flex;
-     width: 70%;
+     width: 100%;
   }
     
    .card{
