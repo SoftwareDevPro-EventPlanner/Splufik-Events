@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     
-    <link rel="stylesheet" type="text/css" href="styles.css">
+
     <link rel="stylesheet" href="/styles/EventPlanstyles.css">
     <link rel="stylesheet" href="/styles/LandingPage-styles.css">
     <link rel="stylesheet" href="/styles/contactstyles.css">
@@ -43,84 +43,11 @@
         eligendi! Aliquid, mollitia.</div></div>
 
 <!-------- WEDDING CARD --->
-<div class="card">
-     <div class="card-header"></div>
-    <div class="image">
-       <img src="images/wedding.jpg">
-    </div>
-    <div class="title">
-     <h1>Wedding Plan</h1>
-     <p>Lorem ipsum dolor, sit amet consectetur 
-         adipisicing elit. Dolorum ad aspernatur 
-         totam voluptatem reiciendis voluptatibus
-          odit in soluta.</p>
-    </div>
-    <div class="card-footer">
-        <button>Buy Plan</button>
-    </div>
-    </div>
-    </div>
+<div class="eventPlan-container">
+
 </div>
 
-<!------BIRTHDAY CARD ------->
-<div class="card">
-    <div class="card-header"></div>
-   <div class="image">
-      <img src="images/birthday.jpg">
-   </div>
-   <div class="title">
-    <h1>Birthday Plan</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur 
-        adipisicing elit. Dolorum ad aspernatur 
-        totam voluptatem reiciendis voluptatibus
-         odit in soluta.</p>
-   </div>
-   <div class="card-footer">
-       <button>Buy Plan</button>
-   </div>
-   </div>
-   </div>
-</div>
-<!------- MUSIC EVENT CARD ----->
-<div class="card">
-    <div class="card-header"></div>
-   <div class="image">
-      <img src="images/main.jpg">
-   </div>
-   <div class="title">
-    <h1>Music Event Plan</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur 
-        adipisicing elit. Dolorum ad aspernatur 
-        totam voluptatem reiciendis voluptatibus
-         odit in soluta.</p>
-   </div>
-   <div class="card-footer">
-       <button>Buy Plan</button>
-   </div>
-   </div>
-   </div>
-</div>
-<!--------COPORATE EVENT CARD ----------->
-<div class="card">
-    <div class="card-header"></div>
-   <div class="image">
-      <img src="images/coporate.jpg">
-   </div>
-   <div class="title">
-    <h1>Coporate Event Plan</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur 
-        adipisicing elit. Dolorum ad aspernatur 
-        totam voluptatem reiciendis voluptatibus
-         odit in soluta.</p>
-   </div>
-   <div class="card-footer">
-       <button>Buy Plan</button>
-   </div>
-   </div>
-   </div>
-</div>
 
-<!------------ ##########-EVENT CARDS ENDS---############----------->
 
 
 <!------------########---UPCOMING EVENTS STARTS---##########--------->
@@ -203,12 +130,27 @@
     <p>Eventee &copy | <time></time></p>
 </footer>
 </div>
-
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js">
+</script>
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-firestore.js">
+</script>
 <script>
-  const currentDate = new Date()
-document.querySelector('time').textContent += currentDate.getFullYear()
+  var firebaseConfig = {
+    apiKey: "AIzaSyBSuejxBI1P9tPKxd2Wd9tXRzQ5mFu16XQ",
+    authDomain: "eventee-f3596.firebaseapp.com",
+    databaseURL: "https://eventee-f3596.firebaseio.com",
+    projectId: "eventee-f3596",
+    storageBucket: "eventee-f3596.appspot.com",
+    messagingSenderId: "858727512234",
+    appId: "1:858727512234:web:b9da61775fd1c7c3f378d3",
+    measurementId: "G-NB69NCYYY2"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore()
+</script>
+<script src="main.js">
 
-console.log(document.querySelector('time').innertText = currentDate.getFullYear())
 </script>
 </body>
 
