@@ -3,12 +3,6 @@
  *@aboutPage{*} styling
  **********/
 
-* {
-  margin: 0;
-  padding: 0;
-  line-height: 2;
-}
-
 h1,
 h2,
 h3,
@@ -94,39 +88,27 @@ nav ul {
 }
 
 nav ul li a {
-  padding: 4rem;
-  color: #fff;
+  padding: 0 1.5rem;
+  color: #d3cfcf;
   font-size: 1.8rem;
-  margin: 3rem;
 }
 
 nav ul li a:hover {
+  color: #fff;
+  border: none;
   text-decoration: none;
 }
 
-#OurContact:hover {
-  border-bottom: solid 0.8px #fff;
-  padding-bottom: 0.3rem;
+li img {
+  width: 50px;
+  height: 20px;
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
-#OurHome:hover {
-  border-bottom: solid 0.8px #fff;
-  padding-bottom: 0.3rem;
-}
-
-#OurEvent:hover {
-  border-bottom: solid 0.8px #fff;
-  padding-bottom: 0.3rem;
-}
-
-#aboutUs:hover {
-  border-bottom: solid 0.8px #fff;
-  padding-bottom: 0.3rem;
-}
-
-#hireUs:hover {
-  border-bottom: solid 0.8px #fff;
-  padding-bottom: 0.3rem;
+img[alt='eng-translation'] {
+  padding-left: 1rem;
 }
 
 @media (max-width: 768px) {

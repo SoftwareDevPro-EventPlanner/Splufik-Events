@@ -1,6 +1,6 @@
 University name: Estonian Entrepreneurship University of Applied science.
 Location: Tallinn Estonian
-Students or Team members behind the project: Abiola, Chizoba, Ifeanyi & Onah.
+Students or Team members behind the project: Abiola, Chizoba, Ifeanyi, Peter & Onah.
 Lecturers: Innah & Dmitry
 General Overview: This project is a software development project 2 group work and the 
 project is an event planning web application where users buy the event plan and we carry 

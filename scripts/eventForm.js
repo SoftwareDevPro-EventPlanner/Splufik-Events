@@ -6,7 +6,7 @@
  * built for allowing users to to buy and 
  * event plan while we plan the event for them
  * 
- * Product founders:Eventee team @{Mainor:Abiola,Chizoba,Ifeanyi & Onah}
+ * Product founders:Eventee team @ Mainor{Abiola,Chizoba,Ifeanyi,Peter & Onah}
  * 
  * Product stack:Html,Css,Jscript,Firebase Storage Api,Imgbb,Parcel bundler mod
  * 
@@ -41,12 +41,12 @@ document.addEventListener('DOMContentLoaded', () => {
       .add(dataCollection)
       .then(res => {
         console.log('*******Successfully Submited*******');
-        alert('Submitted Successfully')
+        alert('Submitted Successfully');
       })
       .catch(err => {
         console.log('*******Submition Faile*******\n', err);
         form.style.border = 'solid 1px red';
       });
-      form.reset()
+    form.reset();
   });
 });
