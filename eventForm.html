@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Eventee | Wedding</title>
+    <link rel="icon" href="https://i.ibb.co/FwkB0jq/logo.png" />
+    <link rel="stylesheet" href="/styles/generalSettings.css" />
+    <link rel="stylesheet" href="/styles/adminLogin.css" />
+    <link rel="stylesheet" href="/styles/eventForm.css">
+    
+  </head>
+  <body>
+    <div class="container weddContainer">
+      <header>
+        <nav>
+          <h1>Eventee</h1>
+          <ul>
+            <li id="hm"><a href="/index.html">Home</a></li>
+            <li><a href="/aboutPage.html">About</a></li>
+            <li><a href="#">Event Plan</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li>
+              <img
+                src="https://i.ibb.co/K54p6tg/eng.png"
+                alt="eng-translation"
+              />
+            </li>
+            <li>
+              <img
+                src="https://i.ibb.co/Y7fyVxK/est.png"
+                alt="est-translation"
+              />
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div id="wed_page">
+        <div class="container3">
+          <div class="section">
+            <h4><span style="color: brown;">We Make it</span> Happen Always</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+              eligendi fugit numquam. Sit facilis optio cupiditate expedita
+              dolorem ducimus architecto reprehenderit assumenda a, quidem
+              recusandae, rerum, fugiat deserunt. Quo, vitae.
+            </p>
+          </div>
+        </div>
+
+        <div class="Entry1">
+          <div class="form1">
+            <form>
+              <h4 style="color: brown;">fill your details</h4>
+
+              <input type="text" name="fullName" placeholder="Full Name" />
+              <select name="eventType">
+                <option >Select your event type</option>
+                <option value="wedding">Wedding</option>
+                <option value="Birthday">Birthday</option>
+              </select>
+
+              <input type="email" name="email" placeholder="Email" />
+              <input type="text" name="phoneNumber" placeholder="Phone Number" />
+              <input type="text" name="eventLocation" placeholder="Event Location" />
+              <input type="text" name="dob" placeholder="Date of birth" />
+              <input type="text" name="eventDate" placeholder="Date of Event" />
+              <textarea name="description" placeholder="write a short summary of what you want for the event"></textarea>
+              <h5>Summary</h5>
+              <h5>Total</h5>
+              <input type="submit" id="payment" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- The i18next Localisation lib cdn below -->
+    <script src="https://unpkg.com/i18next@19.4.4/dist/umd/i18next.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: 'AIzaSyBSuejxBI1P9tPKxd2Wd9tXRzQ5mFu16XQ',
+        authDomain: 'eventee-f3596.firebaseapp.com',
+        databaseURL: 'https://eventee-f3596.firebaseio.com',
+        projectId: 'eventee-f3596',
+        storageBucket: 'eventee-f3596.appspot.com',
+        messagingSenderId: '858727512234',
+        appId: '1:858727512234:web:b9da61775fd1c7c3f378d3',
+        measurementId: 'G-NB69NCYYY2'
+      };
+      Object.freeze(firebaseConfig);
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+      const db = firebase.firestore();
+    </script>
+    <script src="./scripts/eventForm.js"></script>
+  </body>
+</html>
