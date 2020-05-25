@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="https://i.ibb.co/FwkB0jq/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/src/styles/generalSettings.css" />
+    <link rel="stylesheet" href="/src/styles/eventBookings.css" />
+    <title>Eventee | About</title>
+  </head>
+
+  <bo<body>
+      <div class="container">
+        <header>
+          <nav>
+            <h1>Eventee</h1>
+          
+          </nav>
+        </header>
+        
+        <p>Admin</p>
+        
+        <h2>
+          Customer bookings
+        </h2>
+        
+        <div class="bookingWrapper">
+          
+            <div class="bookings">
+              
+                <button>Confirm order</button>
+            </div>
+        </div>
+        
+        
+        
+        <footer>
+          <p>Eventee &copy | <time></time></p>
+        </footer>
+      </div>
+      <script>
+        const currentDate = new Date();
+        document.querySelector('time').textContent += currentDate.getFullYear();
+      </script>
+  
+  <!-- The i18next Localisation lib cdn below -->
+  <script src="https://unpkg.com/i18next@19.4.4/dist/umd/i18next.js"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
+  
+  <script>
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: 'AIzaSyBSuejxBI1P9tPKxd2Wd9tXRzQ5mFu16XQ',
+      authDomain: 'eventee-f3596.firebaseapp.com',
+      databaseURL: 'https://eventee-f3596.firebaseio.com',
+      projectId: 'eventee-f3596',
+      storageBucket: 'eventee-f3596.appspot.com',
+      messagingSenderId: '858727512234',
+      appId: '1:858727512234:web:b9da61775fd1c7c3f378d3',
+      measurementId: 'G-NB69NCYYY2'
+    };
+    Object.freeze(firebaseConfig);
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    const db = firebase.firestore();
+  </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="/src/scripts/eventBookings.js"></script> 
+    </body>
+</html>

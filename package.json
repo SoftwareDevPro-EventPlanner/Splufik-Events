@@ -4,21 +4,18 @@
   "description": "Project description:",
   "main": "adminInsertionPanel.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build *.html",
+    "dev": "parcel *.html",
+    "watch": "parcel watch *.html"
   },
-  "keywords": [
-    "parcel-bundler",
-    "i18next"
-  ],
-  "author": [
-    "Abiola",
-    "Chizoba",
-    "Ifeanyi",
-    "Onah"
-  ],
   "license": "ISC",
   "dependencies": {
     "i18next": "^19.4.4",
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "webpack-cli": "^3.3.11"
+  },
+  "devDependencies": {
+    "webpack": "^4.43.0"
   }
 }

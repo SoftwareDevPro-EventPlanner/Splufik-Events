@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Eventee|Admin Login</title>
     <link rel="icon" href="https://i.ibb.co/FwkB0jq/logo.png" />
-    <link rel="stylesheet" href="/styles/generalSettings.css" />
+    <link rel="stylesheet" href="/src/styles/generalSettings.css" />
     <link rel="stylesheet" href="/styles/adminLogin.css" />
   </head>
   <body>
@@ -26,10 +26,8 @@
               />
             </li>
             <li>
-              <img
-                src="https://i.ibb.co/Y7fyVxK/est.png"
-                alt="est-translation"
-              />
+                <img id="germLocale"src="https://i.ibb.co/G2PGbpn/german.png"alt="German-translation"/>
+
             </li>
           </ul>
         </nav>
@@ -73,6 +71,6 @@
       firebase.analytics();
       const db = firebase.firestore();
     </script>
-    <script src="./scripts/adminLogin.js"></script>
+    <script type="module" src="/src/scripts/adminLogin.js"></script>
   </body>
 </html>

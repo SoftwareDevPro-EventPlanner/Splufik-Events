@@ -5,31 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Eventee | Admin Insertion Panel</title>
+    <script src="https://unpkg.com/i18next/i18next.js"></script>
+    <script src="https://unpkg.com/i18next-xhr-backend/i18nextXHRBackend.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.js"></script>  </head>
     <link rel="icon" href="https://i.ibb.co/FwkB0jq/logo.png" />
-    <link rel="stylesheet" href="/styles/generalSettings.css" />
-    <link rel="stylesheet" href="/styles/adminInsertionPanel.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="/src/styles/generalSettings.css" />
+    <link rel="stylesheet" href="/src/styles/adminInsertionPanel.css" />
+    <body>
     <div class="container">
       <header>
         <nav>
           <h1>Eventee</h1>
           <ul>
             <li id="hm"><a href="/index.html">Home</a></li>
-            <li><a href="/aboutPage.html">About</a></li>
-            <li><a href="/eventPlans.html">Event Plan</a></li>
-            <li><a href="/contact.html">Contact</a></li>
+            <li id="ab"><a href="/aboutPage.html">About</a></li>
+            <li id="ep"><a href="/eventPlans.html">Event Plan</a></li>
+            <li id="ct"><a href="/contact.html">Contact</a></li>
             <li>
-              <img
-                src="https://i.ibb.co/K54p6tg/eng.png"
-                alt="eng-translation"
-              />
+              <img id="engLocale"src="https://i.ibb.co/K54p6tg/eng.png"alt="eng-translation"/>
             </li>
             <li>
-              <img
-                src="https://i.ibb.co/Y7fyVxK/est.png"
-                alt="est-translation"
-              />
+              <img id="germLocale"src="https://i.ibb.co/G2PGbpn/german.png"alt="German-translation"/>
             </li>
           </ul>
         </nav>
@@ -37,13 +33,13 @@
 
       <div id="formNdAsideWrapper">
         <aside>
-          <a href="./adminInsertionPanel.html">Admin Insertion Login</a>
-          <a href="#">View Clients Events</a>
+          <a id="insertPanel" href="./adminInsertionPanel.html">Admin Insertion Panel</a>
+          <a id="eventsPanel" href="./eventBookings.html">View Clients Events Panel</a>
         </aside>
         <form>
-          <h3>Welcome to Admin Plan Panel</h3>
+          <h3 id="welNote">Welcome to Admin Plan Panel</h3>
           <progress max="100" value="30" id="uploadProgress">0%</progress>
-          <label for="eventPlan">Event plan type</label>
+          <label for="eventPlan" id="eventPlanType">Event plan type</label>
           <input
             id="eventPlan"
             type="text"
@@ -51,7 +47,7 @@
             placeholder="Event Plan Type"
             required
           />
-          <label for="eventImgLink">Event image link</label>
+          <label for="eventImgLink" id="eventImageLink">Event image link</label>
           <input
             id="eventImgLink"
             type="text"
@@ -59,7 +55,7 @@
             placeholder="Event Image Link"
             required
           />
-          <label for="eventPrice">Event price</label>
+          <label for="eventPrice" id="eventPrice">Event price</label>
           <input
             id="eventPrice"
             type="text"
@@ -67,14 +63,14 @@
             placeholder="Event price"
             required
           />
-          <label for="eventDesc">Event description</label>
+          <label for="eventDesc" id="eventDescription">Event description</label>
           <textarea
             id="eventDesc"
             name="eventDesc"
             placeholder="Event description"
             required
           ></textarea>
-          <input type="submit" value="Submit Plan" />
+          <input id="submitBtn" type="submit" value="Submit Plan" />
         </form>
       </div>
 
@@ -109,6 +105,6 @@
       firebase.analytics();
       const db = firebase.firestore();
     </script>
-    <script src="/scripts/adminInsertionPanel.js"></script>
+    <script type="module" src="/src/scripts/adminInsertionPanel.js"></script>
   </body>
 </html>

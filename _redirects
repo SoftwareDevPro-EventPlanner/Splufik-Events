@@ -1,5 +1,11 @@
         # for root
        /*                         /index.html        200
       # for the rest
-     /adminInsertionPanel/*      /adminInsertionPanel.html    200
-   
+       /adminInsertionPanel/*      /adminInsertionPanel.html    200
+      /aboutPage/*                /aboutPage.html    200
+     /adminLogin/*               /adminLogin.html    200
+    /contact/*                  /contact.html    200
+   /index/*                    /index.html    200
+  /eventForm/*                /eventForm.html    200
+ /eventBookings/*            /eventBookings.html    200
+/eventPlans/*               /eventPlans.html    200

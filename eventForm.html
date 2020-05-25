@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Eventee | Wedding</title>
     <link rel="icon" href="https://i.ibb.co/FwkB0jq/logo.png" />
-    <link rel="stylesheet" href="/styles/generalSettings.css" />
-    <link rel="stylesheet" href="/styles/adminLogin.css" />
-    <link rel="stylesheet" href="/styles/eventForm.css">
+    <link rel="stylesheet" href="/src/styles/generalSettings.css" />
+    <link rel="stylesheet" href="/src/styles/adminLogin.css" />
+    <link rel="stylesheet" href="/src/styles/eventForm.css">
     
   </head>
   <body>
@@ -28,10 +28,8 @@
               />
             </li>
             <li>
-              <img
-                src="https://i.ibb.co/Y7fyVxK/est.png"
-                alt="est-translation"
-              />
+                <img id="germLocale"src="https://i.ibb.co/G2PGbpn/german.png"alt="German-translation"/>
+
             </li>
           </ul>
         </nav>
@@ -103,6 +101,6 @@
       firebase.analytics();
       const db = firebase.firestore();
     </script>
-    <script src="./scripts/eventForm.js"></script>
+    <script src="/src/scripts/eventForm.js"></script>
   </body>
 </html>

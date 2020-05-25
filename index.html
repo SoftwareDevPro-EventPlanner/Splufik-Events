@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Eventee | Home</title>
     <link rel="icon" href="https://i.ibb.co/FwkB0jq/logo.png" />
-    <link rel="stylesheet" href="/styles/generalSettings.css" />
-    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/src/styles/generalSettings.css" />
+    <link rel="stylesheet" href="/src/styles/index.css" />
   </head>
   <body>
     <div class="container">
@@ -15,22 +15,16 @@
         <nav>
           <h1>Eventee</h1>
           <ul>
-            <li id="hm"><a href="/index.html">Home</a></li>
-            <li><a href="/aboutPage.html">About</a></li>
-            <li><a href="/eventPlans.html">Event Plan</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-            <li>
-              <img
-                src="https://i.ibb.co/K54p6tg/eng.png"
-                alt="eng-translation"
-              />
-            </li>
-            <li>
-              <img
-                src="https://i.ibb.co/Y7fyVxK/est.png"
-                alt="est-translation"
-              />
-            </li>
+              <li id="hm"><a href="/index.html">Home</a></li>
+              <li id="ab"><a href="/aboutPage.html">About</a></li>
+              <li id="ep"><a href="/eventPlans.html">Event Plan</a></li>
+              <li id="ct"><a href="/contact.html">Contact</a></li>
+              <li>
+                <img id="engLocale"src="https://i.ibb.co/K54p6tg/eng.png"alt="eng-translation"/>
+              </li>
+              <li>
+                <img id="germLocale"src="https://i.ibb.co/G2PGbpn/german.png"alt="German-translation"/>
+              </li>
           </ul>
         </nav>
       </header>
@@ -66,5 +60,6 @@
         (document.querySelector('time').innertText = currentDate.getFullYear())
       );
     </script>
+    <script src="/src/scripts/index.js"></script>
   </body>
 </html>

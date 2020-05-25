@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="https://i.ibb.co/FwkB0jq/logo.png" />
-    <link rel="stylesheet" href="/styles/generalSettings.css" />
-    <link rel="stylesheet" href="./styles/eventPlans.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventee | Event-Plan
-    </title>
+    <title>Eventee | Event-Plan </title>
+    <link rel="icon" href="https://i.ibb.co/FwkB0jq/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/src/styles/generalSettings.css" />
+    <link rel="stylesheet" href="/src/styles/eventPlans.css">
+   
 </head>
 <body>
     <div class="container">
@@ -27,10 +27,8 @@
                 />
               </li>
               <li>
-                <img
-                  src="https://i.ibb.co/Y7fyVxK/est.png"
-                  alt="est-translation"
-                />
+                  <img id="germLocale"src="https://i.ibb.co/G2PGbpn/german.png"alt="German-translation"/>
+
               </li>
             </ul>
           </nav>
@@ -158,7 +156,7 @@
   firebase.initializeApp(firebaseConfig);
   const db = firebase.firestore()
 </script>
-<script src="./scripts/eventPlans.js"></script>
+<script src="/src/scripts/eventPlans.js"></script>
 </body>
 </body>
 </html>

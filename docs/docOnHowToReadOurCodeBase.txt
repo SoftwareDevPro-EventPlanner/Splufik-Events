@@ -1,0 +1,24 @@
+/**************************************************************************
+ * 
+ * Product name:Eventee Web App
+ * 
+ * Product Desc:This software is 
+ * built for allowing users to to buy and 
+ * event plan while we plan the event for them
+ * 
+ * Product founders:Eventee team @ Mainor{Abiola,Chizoba,Ifeanyi,Peter & Onah}
+ * 
+ * Product stack:Html,Css,Jscript,Firebase Storage Api,Imgbb,Parcel bundler mod
+ * 
+ * This txt file: this txt file holds the valuable information on how to read our codebase which is hindered from attackers on the web 
+ * Production year:2020
+ * 
+ *  ...... .       . .......  .    .  ......  ......   .......
+ *  ....     .   .   .....    . .  .    ..    .....    .....
+ *  ......     .     .......  .    .    ..    ......   .......
+ * 
+ /**************************************************************************/
+
+ 1.HOW TO READ THE JSCRIPT CODEBASE: The script folder contains a minified version of our project scripts which help to reduce vulnerability to our codebase.
+   To read our codebase, kindly navigate to private folder,locate every js file which has same name with the ones in the script folder but, this time around 
+   with conventional underscore to show its a privated file.
