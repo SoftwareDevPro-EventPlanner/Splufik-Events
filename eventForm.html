@@ -18,17 +18,16 @@
           <h1>Eventee</h1>
           <ul>
             <li id="hm"><a href="/index.html">Home</a></li>
-            <li><a href="/aboutPage.html">About</a></li>
-            <li><a href="#">Event Plan</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-            <li>
-              <img
-                src="https://i.ibb.co/K54p6tg/eng.png"
-                alt="eng-translation"
-              />
+            <li id="ab"><a href="/aboutPage.html">About</a></li>
+            <li id="ep"><a href="/eventPlans.html">Event Plan</a></li>
+            <li id="ct"><a href="/contact.html">Contact</a></li>
+
+           <li>
+              <img id="engLocale"src="https://i.ibb.co/K54p6tg/eng.png"alt="eng-translation"/>
             </li>
             <li>
-                <img id="germLocale"src="https://i.ibb.co/G2PGbpn/german.png"alt="German-translation"/>
+              <img id="germLocale"src="https://i.ibb.co/G2PGbpn/german.png"alt="German-translation"/>
+            </li>
 
             </li>
           </ul>
@@ -37,7 +36,7 @@
       <div id="wed_page">
         <div class="container3">
           <div class="section">
-            <h4><span style="color: brown;">We Make it</span> Happen Always</h4>
+            <h4 id="welcNote"><span style="color: brown;">We Make it</span> Happen Always</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
               eligendi fugit numquam. Sit facilis optio cupiditate expedita
@@ -50,23 +49,23 @@
         <div class="Entry1">
           <div class="form1">
             <form>
-              <h4 style="color: brown;">fill your details</h4>
+              <h4  id = "introTxt" style="color: brown;">fill your details</h4>
 
-              <input type="text" name="fullName" placeholder="Full Name" />
+              <input id = "FulN"  type="text" name="fullName" placeholder="Full Name" />
               <select name="eventType">
-                <option >Select your event type</option>
-                <option value="wedding">Wedding</option>
-                <option value="Birthday">Birthday</option>
+                <option id = "introTxt1" >Select your event type</option>
+                <option id = "wed" value="wedding">Wedding</option>
+                <option id = "Bdae" value="Birthday">Birthday</option>
               </select>
 
-              <input type="email" name="email" placeholder="Email" />
-              <input type="text" name="phoneNumber" placeholder="Phone Number" />
-              <input type="text" name="eventLocation" placeholder="Event Location" />
-              <input type="text" name="dob" placeholder="Date of birth" />
-              <input type="text" name="eventDate" placeholder="Date of Event" />
-              <textarea name="description" placeholder="write a short summary of what you want for the event"></textarea>
-              <h5>Summary</h5>
-              <h5>Total</h5>
+              <input  id = "emal" type="email" name="email" placeholder="Email" />
+              <input  id = "phoneNum" type="text" name="phoneNumber" placeholder="Phone Number" />
+              <input  id = "eventLoc" type="text" name="eventLocation" placeholder="Event Location" />
+              <input  id = "Dob" type="text" name="dob" placeholder="Date of birth" />
+              <input  id = "eventd" type="text" name="eventDate" placeholder="Date of Event" />
+              <textarea  id = "Discribe" name="description" placeholder="write a short summary of what you want for the event"></textarea>
+              <h5 id="sum">Summary</h5>
+              <h5 id="tol">Total</h5>
               <input type="submit" id="payment" value="Submit">
             </form>
           </div>
