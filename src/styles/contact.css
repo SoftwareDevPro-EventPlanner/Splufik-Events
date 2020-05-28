@@ -1,0 +1,94 @@
+html {
+  font-size: 12px;
+}
+
+.jumbo {
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  flex-direction: column;
+}
+
+.contactNavLink {
+  font-size: 1.5rem;
+}
+
+.jumbo-text {
+  font-size: 10rem;
+  color: white;
+  font-family: 'poppin';
+  font-weight: lighter;
+  margin: 0 19rem;
+}
+
+.jumbo-para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: white;
+  font-family: 'poppin';
+  font-weight: lighter;
+}
+
+.contact {
+  width: 20%;
+  display: inline-block;
+  margin: 2%;
+  text-align: center;
+  padding: 4.5rem;
+  position: relative;
+}
+
+.contact-head {
+  font-size: 1rem;
+  margin: 0.2rem 4rem;
+  color: #9a0d37;
+  text-align: center;
+}
+
+.contact-title h1 {
+  font-size: 1.6rem;
+  margin: 0 4rem;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-weight: normal;
+}
+
+.contact-title p {
+  font-size: 1.9rem;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .jumbo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem;
+    color: white;
+    font-family: 'poppin';
+    font-weight: lighter;
+    margin: 10rem;
+    height: 5vh;
+  }
+
+  .jumbo-para {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    font-family: 'poppin';
+    font-weight: lighter;
+  }
+
+  .contact {
+    width: 100%;
+    font-size: 1rem;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
+}

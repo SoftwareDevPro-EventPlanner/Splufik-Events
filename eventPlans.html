@@ -1,0 +1,173 @@
+<!--  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventee | Event-Plan </title>
+    <link href="https://fonts.googleapis.com/css2?family=Miss+Fajardose&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://i.ibb.co/FwkB0jq/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/src/styles/generalSettings.css" />
+    <link rel="stylesheet" href="/src/styles/eventPlans.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+     
+</head>
+<body>
+    <div class="container">
+        <header>
+          <nav id="eventPlanHeaderNav">
+            <h1 >Eventee</h1>
+            
+            <ul >
+              <li><a class="lang" key="home"  href="/index.html">Home</a></li>
+              <li><a class="lang" key="about" href="/aboutPage.html">About</a></li>
+              <li><a class="lang" key="eventplan"  href="/EventPlans.html">Event Plan</a></li>
+              <li><a  class="lang" key="contact" href="/contact.html">Contact</a></li>
+              <li>
+                <img id="en"  class="translate" 
+                  src="https://i.ibb.co/K54p6tg/eng.png" 
+                  alt="eng-translation"
+                />
+              </li>
+              <li>
+                  <img   id="gm"  class="translate" src="https://i.ibb.co/G2PGbpn/german.png" alt="German-translation"/>
+
+              </li>
+            </ul> 
+     
+          </nav>
+        </header>
+    </div>
+<!---------############-- EVENT CARDS STARTS --#############-#######---------->
+
+<!---------------------------- CARD BODY ------------------------------->                       
+<div  class="card-body">
+  
+    <div class="lang" key="desc1"   id="h1"  >
+      EVENT PLANS!
+    </div>
+    <div class="lang" key="desc2"  id="p" > You are welcome to Eventee, below are varities of plans that suits any kinds of occassion.
+      
+    </div></div>
+
+<div class="eventPlan-container">
+
+</div>
+
+<div class="upcoming-event">
+    <h1 class="lang" key="desc3"  >UPCOMING EVENTS </h1>
+  </div></div>
+  <div class="date">
+    <div class="date-header"></div>
+    <div class="calen"><i class="fa fa-calendar"></i></div>
+   <div class="date-title">
+    <h1 class="lang" key="desc4">Dimitr's Birthday <span  class="bod">June 4th 2020</span> </h1>
+    <p class="lang" key="desc5">We celebrate with you on your birthday. Conragrats!.
+       </div>
+        <div class="date-footer">
+       <button class="lang" key="desc6" id="date-btn">Dimitri's Birthday </button>
+      </div>
+      </div>
+      </div>
+  </div></div>
+  <div class="date">
+    <div class="date-header"></div>
+    <div class="calen"><i class="fa fa-calendar"></i></div>
+   <div class="date-title">
+    <h1 class="lang" key="desc4">Dimitr's Birthday <span  class="bod">June 4th 2020</span> </h1>
+    <p class="lang" key="desc5">We celebrate with you on your birthday. Conragrats!.
+       </div>
+        <div class="date-footer">
+       <button class="lang" key="desc6" id="date-btn">Dimitri's Birthday </button>
+      </div>
+      </div>
+      </div>
+  </div></div>
+  <div class="date">
+    <div class="date-header"></div>
+    <div class="calen"><i class="fa fa-calendar"></i></div>
+   <div class="date-title">
+    <h1 class="lang" key="desc4">Dimitr's Birthday <span  class="bod">June 4th 2020</span> </h1>
+    <p class="lang" key="desc5">We celebrate with you on your birthday. Conragrats!.
+       </div>
+        <div class="date-footer">
+       <button class="lang" key="desc6" id="date-btn">Dimitri's Birthday </button>
+      </div>
+      </div>
+      </div>
+ 
+   
+</div>
+</div>
+</div>
+
+
+<footer>
+    <p>Eventee &copy | <time></time></p>
+</footer>
+</div>
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js">
+</script>
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-firestore.js">
+</script>
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyBSuejxBI1P9tPKxd2Wd9tXRzQ5mFu16XQ",
+    authDomain: "eventee-f3596.firebaseapp.com",
+    databaseURL: "https://eventee-f3596.firebaseio.com",
+    projectId: "eventee-f3596",
+    storageBucket: "eventee-f3596.appspot.com",
+    messagingSenderId: "858727512234",
+    appId: "1:858727512234:web:b9da61775fd1c7c3f378d3",
+    measurementId: "G-NB69NCYYY2"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore()
+</script>
+<script src="/src/scripts/eventPlans.js"></script>
+
+<!---------############-- Localization --#############-#######---------->
+<script type="text/javascript">
+
+    var arrLang = {
+      'en' :{
+        'home':'Home',
+        'about':'About',
+        'eventplan':'EventPlan',
+        'contact':'Contact',
+        'desc2':'You are welcome to Eventee, below are varities of plans that suits any kinds of occassion.',
+        'desc1': 'EVENT PLANS!',
+        'desc3': 'UPCOMING EVENTS!',
+        'desc4': 'Dimitr Birthday June 4th 2020',
+        'desc5': 'We celebrate with you on your birthday. Conragrats!.',
+        'desc6': 'Dimitris Birthday!.'
+      },
+      'gm' :{
+        'home':'Zuhause',
+        'about':'Über',
+        'eventplan':'Veranstaltungsplan',
+        'contact':'Kontakt',
+        'desc2': 'Sie sind herzlich willkommen bei Eventee. Nachfolgend finden Sie verschiedene Pläne, die für jede Art von Anlass geeignet sind..',
+        'desc1': 'Veranstaltungspläne',
+        'desc3': 'KOMMENDE VERANSTALTUNGEN!',
+        'desc4': 'Dimitr Geburtstag 4. Juni 2020',
+        'desc5': 'Wir feiern mit Ihnen an Ihrem Geburtstag. Conragrats! ',
+        'desc6': 'Dimitris Geburtstag!.'
+      }
+  };
+
+  $(function(){
+   $('.translate').click(function(){
+       var lang = $(this).attr('id');
+
+       $('.lang').each(function(index, item){
+          $(this).text(arrLang[lang][$(this).attr('key')])
+       })
+  })
+});
+ </script> 
+</body>
+</body>
+</html>
