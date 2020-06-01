@@ -19,7 +19,7 @@
  * 
  /**************************************************************************/
 
-document.addEventListener('DOMContentLoaded', _ => {
+ document.addEventListener('DOMContentLoaded', _ => {
   const form = document.querySelector('form');
   const validationRegExp = {
     emailRegExp: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
@@ -50,4 +50,58 @@ document.addEventListener('DOMContentLoaded', _ => {
       });
     form.reset();
   });
-});
+
+ const homeContent = document.querySelector('#hm a');
+ const aboutContent = document.querySelector('#ab a');
+ const eventplanContent = document.querySelector('#ep a');
+ const contactContent = document.querySelector('#ct a');
+ const AdLog_Text= document.querySelector('#Alog');
+ const Login_password = document.querySelector('#password');
+ const LoginBtn= document.querySelector('input[type="submit"]');
+
+
+ const updateGerman = _ => {
+  aboutContent.textContent = 'Über';
+  homeContent.textContent = 'Zuhause';
+  eventplanContent.textContent = 'Veranstaltungsplan';
+  contactContent.textContent = 'Kontakt';
+  
+  AdLog_Text.textContent = 'Admin Anmeldung';
+  LoginBtn.value = 'Anmeldung';
+ };
+
+ const updateEnglish = _ => {
+  aboutContent.textContent = 'About';
+  homeContent.textContent = 'Home';
+  eventplanContent.textContent = 'Event Plan';
+  contactContent.textContent = 'Contact';
+  
+  AdLog_Text.textContent = 'Admin Login';
+  LoginBtn.value = 'Login';
+ };
+
+
+ /***********************
+ * @function{*} Eng localisation
+ ***********************/
+ const engLocale = _ => {
+  const getEngLocale = document.querySelector('#engLocale');
+
+  getEngLocale.addEventListener('click', () => {
+    updateEnglish();
+  });
+ };
+ engLocale();
+
+ /***********************
+ * @function{*} Germ localisation
+ ***********************/
+ const germLocale = _ => {
+  const getGermLocale = document.querySelector('#germLocale');
+
+  getGermLocale.addEventListener('click', () => {
+    updateGerman();
+  });
+ };
+ germLocale();
+})
